@@ -105,7 +105,7 @@ data_pr <- data %>%
   relocate(id, time, pr_a, pr_1, pr_0)
 data <- data_pr
 
-# Compute indicators and IP weights
+# Compute indicators and weights
 data_pre_weights <- data %>%
   mutate(
     ind_a0_c0 = ifelse((opioid_omeq > 0 & nsaid_ind == 0) |
@@ -127,7 +127,7 @@ data_pre_weights <- data %>%
                 w_a0_c0, w_a1_c0, w_a0_c1, w_a1_c1)
 data <- data_pre_weights
 
-# Keep only time points within treatment period
+# Keep only time points within the treatment period
 data_time <- data %>% filter(time < kappa + 1)
 data <- data_time
 
@@ -146,7 +146,7 @@ compute_weights <- function(subset_data) {
   # Generate all combinations of 0/1 for mm time points
   combinations <- expand.grid(replicate(mm, c(0, 1), simplify = FALSE))
   
-  # Compute product of weights for each combination
+  # Compute the product of weights for each combination
   compute_product_c0 <- function(row) {
     indices <- row + 1  # shift from 0/1 to 1/2 indexing
     prod(f_values_c0[cbind(1:mm, indices)])
