@@ -2,13 +2,13 @@
 
 This R code is part of the supplementary material to the paper “Add-On Regimes and Their Relevance for Quantifying the Effects of Opioid-Sparing Treatments.”
 
-The code was used to estimate opioid-sparing effects of NSAIDs in a cohort of Norwegian trauma patients, using national registry data. 
+The code was used to estimate opioid-sparing effects of supplementing opioid treatments with nonsteroidal anti-inflammatory drugs (NSAIDs), in a cohort of Norwegian trauma patients, using national registry data. 
 
 More generally, the code can be used to estimate add-on effects—defined as the average causal effect of implementing one intervention (e.g., NSAID treatment) whenever another event occurs (e.g., opioid treatment) during a treatment period—on an outcome of interest (e.g., subsequent opioid use).
 
-This folder contains two R scripts:
-- gformula.R: estimates the add-on effect using a g-formula estimator (as described in Section 7 of the main paper)
-- IPW.R: estimates the add-on effect using an inverse probability weighted (IPW) estimator
+This folder contains two \texttt{R} scripts:
+- \texttt{gformula.R}: Implements estimation of the add-on effect using a g-formula estimator. The results presented in Section 7 of the main article are based on this script.
+- \texttt{IPW.R}: Implements estimation of the add-on effect using an inverse probability weighting (IPW) estimator.
 
 ## Data
 
