@@ -25,5 +25,7 @@ Note on censoring: In the data used in this specific example, there is no censor
 
 Note on `opioid_omeq`: In this specific example on opioid-sparing effects, the variable `opioid_omeq` play a dual role: it serves both as the outcome variable (since we are interested in the effect on opioid dose) and as a key time-varying covariate (since we are interested in the effect of adding NSAIDs when opioids are administered). In other applications, these roles may be represented by distinct variables. For example, when evaluating whether prescribing probiotics alongside antibiotics reduces antibiotic-associated diarrhea, a variable `diarrhea` may be the outcome variable of interest, indicating diarrhea at time $k$, while a separate time-varying variable, `antibiotic`, indicates antibiotic use at time $k$.
 
-Note on this specific data set: The input data `data_pre` stem from observational data from [NTRplus]([https://pages.github.com/](https://www.ous-research.no/home/ipot/Projects/20448)), which links the [Norwegian National Trauma Registry](https://www.ous-research.no/home/ipot/Projects/20448)
+The input data `data_pre` stem from observational data from [NTRplus]([https://pages.github.com/](https://www.ous-research.no/home/ipot/Projects/20448)), which links the [Norwegian National Trauma Registry](https://www.ous-research.no/home/ipot/Projects/20448)
 to several national databases: the [Norwegian Prescription Database](https://www.norpd.no/), the [Cause of Death Registry](https://www.fhi.no/en/ch/cause-of-death-registry/), the [Norwegian Patient Registry](https://helsedata.no/en/forvaltere/norwegian-institute-of-public-health/norwegian-patient-registry-npr/), and [Statistics Norway](https://www.ssb.no/en). 
+
+
