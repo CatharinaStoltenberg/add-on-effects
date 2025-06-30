@@ -6,9 +6,9 @@ The code was used to estimate opioid-sparing effects of supplementing opioid tre
 
 More generally, the code can be used to estimate add-on effects—defined as the average causal effect of implementing one intervention (e.g., NSAID treatment) whenever another event occurs (e.g., opioid treatment) during a treatment period—on an outcome of interest (e.g., subsequent opioid use).
 
-This folder contains two \texttt{R} scripts:
-- \texttt{gformula.R}: Implements estimation of the add-on effect using a g-formula estimator. The results presented in Section 7 of the main article are based on this script.
-- \texttt{IPW.R}: Implements estimation of the add-on effect using an inverse probability weighting (IPW) estimator.
+This folder contains two **R** scripts:
+- **gformula.R**: Implements estimation of the add-on effect using a g-formula estimator. The results presented in Section 7 of the main article are based on this script.
+- **IPW.R**: Implements estimation of the add-on effect using an inverse probability weighting (IPW) estimator.
 
 ## Data
 
